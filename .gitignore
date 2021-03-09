@@ -1,16 +1,41 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
+# Compiled source #
+###################
+*.com
+*.class
 *.dll
+*.exe
+*.o
 *.so
-*.dylib
 
-# Test binary, built with `go test -c`
-*.test
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
-.envrc
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
