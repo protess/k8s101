@@ -10,6 +10,11 @@ kind delete cluster --name k8s101
 
 # create the new cluster with extra port mapping
 kind create cluster --name k8s101 --config kind-config.yaml
+
+# install wordpress from Wordpress folder first
+# then install ingress-nginx controller
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml
 ```
 
 ### [ingress nginx annotations](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/)
