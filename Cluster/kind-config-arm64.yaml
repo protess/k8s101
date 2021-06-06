@@ -22,21 +22,23 @@ kubeadmConfigPatchesJSON6902:
 nodes:
 # the control plane node config
 - role: control-plane
-  kubeadmConfigPatches:
-  - |
-    kind: InitConfiguration
-    nodeRegistration:
-      kubeletExtraArgs:
-        node-labels: "ingress-ready=true"
-  extraPortMappings:
-  - containerPort: 80
-    hostPort: 80
-    protocol: TCP
-  - containerPort: 443
-    hostPort: 443
-    protocol: TCP
+  # kubeadmConfigPatches:
+  # - |
+  #   kind: InitConfiguration
+  #   nodeRegistration:
+  #     kubeletExtraArgs:
+  #       node-labels: "ingress-ready=true"
+  # extraPortMappings:
+  # - containerPort: 80
+  #   hostPort: 80
+  #   protocol: TCP
+  # - containerPort: 443
+  #   hostPort: 443
+  #   protocol: TCP
 # the three workers
 - role: worker
 - role: worker
 - role: worker
   image: rossgeorgiev/kind-node-arm64
+
+
