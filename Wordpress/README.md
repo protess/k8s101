@@ -22,7 +22,7 @@ EOF
 ```
 Run kustomize to apply secret for mysql
 ```
-kubectl -k ./
+kubectl apply -k ./
 ```
 Add mysql and wordpress deployments in kustomization
 ```
