@@ -9,4 +9,13 @@ KIND 로 클러스터를 만들어 봅시다.
 kind create cluster --name k8s101-kind --config kind-config.yaml
 ```
 
+ctlptl(커들푸들) 로 클러스터를 만들어 봅시다.
+[ctlptl](https://github.com/tilt-dev/ctlptl)
+
+```
+# create kind cluster with docker registry
+ctlptl create cluster kind --registry=ctlptl-registry
+
+```
 [Collection of toolz](https://github.com/tomhuang12/awesome-k8s-resources?fbclid=IwAR2lulAEgAXqwjm0GHzBhDSEzkLAA2X0rrqBpIfLAV3TM0mdO98IjDLjMo8)
+
